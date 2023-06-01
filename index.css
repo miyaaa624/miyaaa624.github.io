@@ -1,0 +1,129 @@
+.container{
+    width: 1280px;
+    height:800px;
+    overflow:hidden;
+}
+
+.bounce{
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+
+
+@keyframes bounce{from{transform:translateY(0px)}to{transform:translateY(-10px)}}
+@-webkit-keyframes bounce{from{transform:translateY(0px)}to{transform:translateY(-10px)}}
+.bounce {animation: bounce 1s infinite alternate;-webkit-animation: bounce 1s infinite alternate;}
+
+.btn{
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    width: 200px;
+    height: 140px;
+    letter-spacing: 8pt;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #ff6608;
+    border: 1px solid #a7ffc6;
+    transition: all .3s linear;
+}
+.btn:hover{
+    background-color:transparent;
+    color: #000000;
+}
+
+.big-title {
+    position: absolute;
+    top: 300px;
+    left: -200px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 700px;
+    height: 25px;
+    letter-spacing: 20px;
+    color: hsl(19, 100%, 57%);
+    background-color: #27ff27;
+    animation: big-title infinite
+}
+.big-title2{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 500px;
+    height: 30px;
+    letter-spacing: 20px;
+    color: hsl(19, 100%, 57%);
+    background-color: #27ff27;
+    animation: big-title infinite
+}
+
+@media screen and (max-width:390px){
+    .container{
+        width: 390px;
+        height:844px;
+        overflow:hidden;
+    }
+    
+    .bounce{
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 300px;
+    }
+    
+    .btn{
+        position: absolute;
+        left: 200px;
+        top: 280px;
+        width: 100px;
+        height: 100px;
+        letter-spacing: 4pt;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        line-height: 40px;
+        color: #ffffff;
+        background-color: #ff6608;
+        border: 1px solid #a7ffc6;
+        transition: all .3s linear;
+    }
+    .btn:hover{
+        background-color:transparent;
+        color: #000000;
+    }
+    
+    .big-title {
+        position: absolute;
+        top: 200px;
+        left: -100px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 300px;
+        height: 25px;
+        letter-spacing: 20px;
+        color: hsl(19, 100%, 57%);
+        background-color: #27ff27;
+        animation: big-title infinite
+    }
+    .big-title2{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 160px;
+        height: 30px;
+        letter-spacing: 20px;
+        color: hsl(19, 100%, 57%);
+        background-color: #27ff27;
+        animation: big-title infinite
+    }
+    
+    
+}
